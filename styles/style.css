@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: no-repeat url(../images/pattern-background-desktop.svg), #e0e8ff;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  #container {
+    background: no-repeat url(../images/pattern-background-mobile.svg), #e0e8ff;
+  }
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(325px, 40vw, 450px);
+  height: clamp(570px, 80vh, 690px);
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  color: #1f2f56;
+  box-shadow: 0 25px 30px -20px rgba(56, 41, 224, 0.3);
+}
+
+#card-details {
+  height: 100%;
+  padding: clamp(25px, 3.5vw, 45px) clamp(25px, 3.5vw, 45px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#card-details > b {
+  font-weight: 700;
+  color: #7280a7;
+  cursor: pointer;
+}
+#card-details > b:hover {
+  color: #1f2f56;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: clamp(24px, 4vw, 32px);
+}
+
+p {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  color: #7280a7;
+  /* font-size: 12px; */
+}
+
+.plan-section {
+  width: 100%;
+  height: clamp(80px, 10vh, 100px);
+  background-color: #f5f7ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+}
+.plan-section a {
+  font-weight: bold;
+}
+.plan-section a:visited {
+  color: #3829e0;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 40px 0 0px;
+  font-size: clamp(14px, 3vw, 16px);
+}
+.plan b {
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+.plan span {
+  font-weight: 500;
+  color: #7280a7;
+}
+
+button {
+  border: none;
+  font-weight: 900;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  background-color: #3829e0;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 20px 30px -10px rgba(56, 41, 224, 0.5);
+}
+button:hover {
+  background-color: rgba(56, 41, 224, 0.8);
+}
+
+/*# sourceMappingURL=style.css.map */
