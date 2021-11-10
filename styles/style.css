@@ -6,6 +6,10 @@
   font-family: "Red Hat Display", sans-serif;
 }
 
+html {
+  height: height: -webkit-fill-available;
+}
+
 #container {
   width: 100vw;
   height: -webkit-fill-available;
