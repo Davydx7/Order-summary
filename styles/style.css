@@ -23,7 +23,7 @@
 #card {
   display: flex;
   flex-direction: column;
-  width: clamp(325px, 40vw, 450px);
+  width: 350px;
   height: clamp(570px, 80vh, 690px);
   background: #fff;
   border-radius: 20px;
@@ -34,7 +34,7 @@
 
 #card-details {
   height: 100%;
-  padding: clamp(25px, 3.5vw, 45px) clamp(25px, 3.5vw, 45px);
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +55,7 @@ img {
 
 h2 {
   font-weight: 900;
-  font-size: clamp(24px, 4vw, 32px);
+  font-size: clamp(28px, 4vw, 32px);
 }
 
 p {
@@ -68,7 +68,7 @@ p {
 
 .plan-section {
   width: 100%;
-  height: clamp(80px, 10vh, 100px);
+  height: 80px;
   background-color: #f5f7ff;
   display: flex;
   justify-content: space-around;
@@ -88,7 +88,7 @@ p {
   flex-direction: column;
   justify-content: center;
   margin: 0 40px 0 0px;
-  font-size: clamp(14px, 3vw, 16px);
+  font-size: 14px;
 }
 .plan b {
   margin-bottom: 5px;
